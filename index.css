@@ -1,0 +1,579 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* navbar */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: century:
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: red;
+    border-radius: 50%;
+    box-shadow:0 0 10px white;
+}
+
+ul a img{
+    padding: 6px ;
+    width: 32px;
+    height:32px ;
+    margin-top: -6px;
+}
+
+/* Home selection */
+.box_home{
+    display: flex;
+    margin-left: -500px;
+    margin-right: 500px;
+
+
+}
+.box_home_image{
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    border:2px solid white;
+
+}
+.box_home_image:hover{
+     width: 60px;
+    height: 60px;
+    margin: 20px;
+    position: relative;
+    z-index: -1;
+    border-radius: 50%;
+    border:red solid;
+
+}
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, .5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('image/deve-e1599820878174(1).jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    margin-right: -400px;
+    margin-left: 400px;
+
+
+}
+.name{
+    font-family: center;
+    font-size: 3rem;
+    text-align: center;
+
+    }
+    .headings{
+    font-family: center;
+    font-size: 3rem;
+    text-align: center;
+    }
+
+.btn{
+    padding: 10px 35px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+    position: absolute;
+    margin-right: -320px;
+    margin-left: 360px;
+    margin-top: -160px;
+    margin-bottom: 160px;
+    border: 2px solid white;
+    width: 130px;
+}
+#hover-image img{
+    position: absolute;
+    margin-left: 260px;
+     margin-top: -140px;
+    margin-bottom: 80px;
+
+}
+div img{
+    width: 300px;
+    height: 400px;
+
+}
+/* image disparut */
+#hover-image {
+   position:relative;
+   height: None;
+   width:None;
+}
+#hover-image img {
+   display: None;
+   position: absolute;
+   border:3px solid blue;
+   color:#fff;
+   left:30px;
+   top:30px;
+
+
+}
+#hover-image:hover img{
+   display:block;
+
+}
+#hover-image img:hover {
+   background: red;
+
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: red;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+    border: None;
+}
+
+/* about me */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 275px;
+    height:360px;
+}
+#intro{
+     display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding-left: 100px;
+    padding-top: 34px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-left: 100px;
+}
+#intro p{
+    flex-direction: column;
+    display: flex;
+    text-align: justify;
+    width: 500px
+}
+#Skils{
+    background: black;
+    height: 250px;
+    display: flex;
+    direction: column;
+    align-items: center;
+    position: relative;
+}
+#skills{
+    background-color: black;
+    color: white;
+}
+
+.box_cercle{
+  position:relative;
+  width: 160px;
+    height: 40%;
+    margin-left: 80px;
+
+}
+
+.circle {
+  width: 120%;
+  height: 60%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#part_python1 {
+
+  -webkit-clip-path: polygon(50% 0, 50% 50%, 100% 41.2%, 100% 0);
+  clip-path: polygon(50% 0, 50% 50%, 100% 41.2%, 100% 0);
+  background-color: green;
+  color: black;
+}
+
+#part_python2 {
+
+  -webkit-clip-path: polygon(50% 50%, 100% 41.2%, 100% 100%, 63.4% 100%);
+  clip-path: polygon(50% 50%, 100% 41.2%, 100% 100%, 63.4% 100%);
+  border: 2px  green solid;
+}
+
+#part_python3 {
+
+  -webkit-clip-path: polygon(50% 50%, 36.6% 100%, 63.4% 100%);
+  clip-path: polygon(50% 50%, 36.6% 100%, 63.4% 100%);
+  border: 2px  green solid;
+}
+
+#part_python4 {
+
+  -webkit-clip-path: polygon(50% 50%, 0 100%, 36.6% 100%);
+  clip-path: polygon(50% 50%, 0 100%, 36.6% 100%);
+  border: 2px  green solid;
+}
+
+#part_python5 {
+  -webkit-clip-path: polygon(50% 50%, 0 36.6%, 0 100%);
+  clip-path: polygon(50% 50%, 0 36.6%, 0 100%);
+  border: 2px  green solid;;
+}
+
+#part_python6 {
+  background-color: green;
+  -webkit-clip-path: polygon(50% 50%, 0 36.6%, 0 0, 50% 0);
+  clip-path: polygon(50% 50%, 0 36.6%, 0 0, 50% 0);
+}
+
+
+/* html*/
+
+#part_html1 {
+  -webkit-clip-path: polygon(50% 0, 50% 50%, 100% 41.2%, 100% 0);
+  clip-path: polygon(50% 0, 50% 50%, 100% 41.2%, 100% 0);
+  border: 2px blue solid;
+}
+
+#part_html2 {
+  -webkit-clip-path: polygon(50% 50%, 100% 41.2%, 100% 100%, 63.4% 100%);
+  clip-path: polygon(50% 50%, 100% 41.2%, 100% 100%, 63.4% 100%);
+  border: 2px blue solid;
+}
+
+#part_html3 {
+   background-color: blue;
+  -webkit-clip-path: polygon(50% 50%, 36.6% 100%, 63.4% 100%);
+  clip-path: polygon(50% 50%, 36.6% 100%, 63.4% 100%);
+}
+
+#part_html4 {
+ background-color: blue;
+  -webkit-clip-path: polygon(50% 50%, 0 100%, 36.6% 100%);
+  clip-path: polygon(50% 50%, 0 100%, 36.6% 100%);
+}
+
+#part_html5 {
+   background-color: blue;
+  -webkit-clip-path: polygon(50% 50%, 0 36.6%, 0 100%);
+  clip-path: polygon(50% 50%, 0 36.6%, 0 100%);
+}
+
+#part_html6 {
+  background-color: blue;
+  -webkit-clip-path: polygon(50% 50%, 0 36.6%, 0 0, 50% 0);
+  clip-path: polygon(50% 50%, 0 36.6%, 0 0, 50% 0);
+}
+
+/* cercle css */
+
+
+#part_css1 {
+  -webkit-clip-path: polygon(50% 0, 50% 50%, 100% 41.2%, 100% 0);
+  clip-path: polygon(50% 0, 50% 50%, 100% 41.2%, 100% 0);
+  border: 2px red solid;
+}
+
+#part_css2 {
+  -webkit-clip-path: polygon(50% 50%, 100% 41.2%, 100% 100%, 63.4% 100%);
+  clip-path: polygon(50% 50%, 100% 41.2%, 100% 100%, 63.4% 100%);
+  background-color: red;
+  border-left: None;
+}
+
+#part_css3 {
+  -webkit-clip-path: polygon(50% 50%, 36.6% 100%, 63.4% 100%);
+  clip-path: polygon(50% 50%, 36.6% 100%, 63.4% 100%);
+  background: red;
+}
+
+#part_css4 {
+  -webkit-clip-path: polygon(50% 50%, 0 100%, 36.6% 100%);
+  clip-path: polygon(50% 50%, 0 100%, 36.6% 100%);
+border: 2px red solid;
+}
+
+#part_css5 {
+  -webkit-clip-path: polygon(50% 50%, 0 36.6%, 0 100%);
+  clip-path: polygon(50% 50%, 0 36.6%, 0 100%);
+  border: 2px red solid;
+}
+
+#part_css6 {
+  -webkit-clip-path: polygon(50% 50%, 0 36.6%, 0 0, 50% 0);
+  clip-path: polygon(50% 50%, 0 36.6%, 0 0, 50% 0);
+  border: 2px red solid;
+}
+
+/* data base */
+
+#part_data1 {
+  -webkit-clip-path: polygon(50% 0, 50% 50%, 100% 41.2%, 100% 0);
+  clip-path: polygon(50% 0, 50% 50%, 100% 41.2%, 100% 0);
+   border: 2px purple solid;
+
+}
+
+#part_data2 {
+  -webkit-clip-path: polygon(50% 50%, 100% 41.2%, 100% 100%, 63.4% 100%);
+  clip-path: polygon(50% 50%, 100% 41.2%, 100% 100%, 63.4% 100%);
+  border: 2px purple solid;
+}
+
+#part_data3 {
+  -webkit-clip-path: polygon(50% 50%, 36.6% 100%, 63.4% 100%);
+  clip-path: polygon(50% 50%, 36.6% 100%, 63.4% 100%);
+  background-color: purple;
+}
+
+#part_data4 {
+  -webkit-clip-path: polygon(50% 50%, 0 100%, 36.6% 100%);
+  clip-path: polygon(50% 50%, 0 100%, 36.6% 100%);
+    background-color: purple;
+}
+
+#part_data5 {
+  -webkit-clip-path: polygon(50% 50%, 0 36.6%, 0 100%);
+  clip-path: polygon(50% 50%, 0 36.6%, 0 100%);
+  border: 2px purple solid;
+}
+
+#part_data6 {
+  -webkit-clip-path: polygon(50% 50%, 0 36.6%, 0 0, 50% 0);
+  clip-path: polygon(50% 50%, 0 36.6%, 0 0, 50% 0);
+    border: 2px purple solid;
+}
+
+/* office */
+
+#part_office1 {
+  -webkit-clip-path: polygon(50% 0, 50% 50%, 100% 41.2%, 100% 0);
+  clip-path: polygon(50% 0, 50% 50%, 100% 41.2%, 100% 0);
+  background-color: violet;
+}
+
+#part_office2 {
+  -webkit-clip-path: polygon(50% 50%, 100% 41.2%, 100% 100%, 63.4% 100%);
+  clip-path: polygon(50% 50%, 100% 41.2%, 100% 100%, 63.4% 100%);
+  background-color: violet;
+}
+
+#part_office3 {
+  -webkit-clip-path: polygon(50% 50%, 36.6% 100%, 63.4% 100%);
+  clip-path: polygon(50% 50%, 36.6% 100%, 63.4% 100%);
+  border: 2px violet solid;
+}
+
+#part_office4 {
+  -webkit-clip-path: polygon(50% 50%, 0 100%, 36.6% 100%);
+  clip-path: polygon(50% 50%, 0 100%, 36.6% 100%);
+  border: 2px violet solid;
+}
+
+#part_office5 {
+  -webkit-clip-path: polygon(50% 50%, 0 36.6%, 0 100%);
+  clip-path: polygon(50% 50%, 0 36.6%, 0 100%);
+  background-color: violet;
+}
+
+#part_office6 {
+  -webkit-clip-path: polygon(50% 50%, 0 36.6%, 0 0, 50% 0);
+  clip-path: polygon(50% 50%, 0 36.6%, 0 0, 50% 0);
+  background-color: violet;
+}
+/* fin office */
+
+
+/* cercle*/
+#pourcent {
+    width: 450px;
+    height: 450px;
+
+    border-top: 30px solid #416fa6;
+    border-right: 30px solid #718242;
+    border-bottom: 30px solid #63ae98;
+    border-left: 30px solid #b45447;
+    -webkit-border-radius: 300px;
+       -moz-border-radius: 300px;
+            border-radius: 300px;
+}
+
+/* portfolio section*/
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+
+/* service section */
+
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width:350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(255,45,45) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(255, 45, 45);
+}
+.box img{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    padding: 10px;
+}
+
+/* contact section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow:0 0 10 white;
+}
+.text{
+    color: white;
+}
+div a{
+    margin-left: -480px;
+    margin-right: 480px;
+    padding-left: 10px;
+    margin-top: 52px;
+    margin-bottom: 52px;
+
+
+}
+div a img{
+    width: 30px;
+    height: 30px;
+    border: 2px red solid;
+
+}
+

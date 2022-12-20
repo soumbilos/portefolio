@@ -1,0 +1,159 @@
+
+body{
+
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    direction: column;
+    text-align: center;
+    font-size: 5px;
+    margin-left: -20px;
+    margin-top: 0px
+
+}
+.navbar ul li{
+    flex-wrap: wrap;
+    justify-content: center;
+    direction: column;
+    text-align: center;
+    font-size: 5px;
+    margin-left: 2px;
+    margin-top: 10px;
+
+}
+
+/* Home */
+#home{
+    height: 820px;
+}
+.name{
+    justify-content: Auto;
+    font-size: 1.7rem;
+    font-size: 10px;
+    text-align: Auto;
+    margin-left: -180px;
+    margin-bottom: 100px;
+    margin-top: -40px;
+    position: absolute;
+}
+headings_text{
+    color: white;}
+headings_text{
+    color: white;
+}
+.headings{
+    font-size: 1.7rem;
+    font-size: 10px;
+    margin-left:52px;
+    margin-bottom: 100px;
+    margin-top: -40px;
+    position: absolute;
+}
+headings_text{
+    color: white;
+ }
+#hover-image{
+    margin-left: -250px;
+     margin-bottom: 500px;
+     margin_top: -500px;
+
+}
+#hover-image img{
+    margin-bottom: 400px;
+    margin_top: -200px;
+   margin-left: 20px;
+   height: Auto;
+   width: 150px;
+
+}
+}
+.btn{
+    width: 110px;
+    font-size: 8px;
+    direction: column;
+    text-align: center;
+}
+
+#Skils{
+    display: flex;
+    direction: column;
+    align-items: center;
+    position: relative;
+}
+#skills{
+    background-color: black;
+    color: white;
+}
+.box_cercle{
+  position:relative;
+  width: 160px;
+    height: 10%;
+    margin-left: 15px;
+
+}
+
+.circle {
+  width: 120%;
+  height: 60%;
+  border-radius: 50%;
+  position: absolute;
+}
+#Skils{
+    display: flex;
+    direction: column;
+    align-items: center;
+    position: relative;
+}
+#skills{
+    background-color: black;
+    color: white;
+}
+.box_cercle{
+  position:relative;
+  width: 160px;
+    height: 10%;
+    margin-left: 15px;
+
+}
+
+.circle {
+  width: 120%;
+  height: 60%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+
+/* about*/
+#pic img{
+    width: 300px;
+    height: 175px;
+}
+#intro h2{
+    font-size: 1.5rem;
+}
+
+/* portefolio */
+
+.gallery img{
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+}
+
+/* contact */
+.input{
+    width: 80%;
+}
+
+#msg{
+    width: 70%;
+}
+#send{
+    width: 20%;
+}
